@@ -51,3 +51,9 @@ input {
   outline-color: var(--secondary);
   resize: none;
 }
+
+.form__character-count {
+  text-align: right;
+  font-size: inherit;
+  color: #666;
+}

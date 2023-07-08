@@ -20,19 +20,33 @@
           <textarea
             name="question"
             id="question"
+            minlength="3"
+            maxlength="150"
+            required
             rows="5"
             placeholder="What do you understand by the universal sector in CSS?"
             data-js="question"
           ></textarea>
+          <small class="form__character-count">
+            (<span data-js="question-amount-left"></span> characters
+            left)</small
+          >
           <label for="answer">Your answer</label>
           <textarea
             name="answer"
             id="answer"
+            data-js="answer"
+            minlength="1"
+            maxlength="150"
+            required
             rows="5"
             placeholder="A universal selector is a selector that matches any element type's name instead of selecting elements of a particular type."
           ></textarea>
+          <small class="form__character-count"
+            >(<span data-js="answer-amount-left"></span> characters left)</small
+          >
           <label for="tag">Tag</label>
-          <input type="text" name="tag" id="tag" placeholder="CSS" />
+          <input type="text" name="tag" id="tag" required placeholder="CSS" />
           <button class="form__button" type="submit">Submit</button>
         </fieldset>
       </form>
